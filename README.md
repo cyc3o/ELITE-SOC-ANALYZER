@@ -1,6 +1,7 @@
 ![PYTHON](https://img.shields.io/badge/PYTHON-3.9%2B-BLUE)
 
 ![STATUS](https://img.shields.io/badge/STATUS-ACTIVE-SUCCESS)
+
 ELITE SOC ANALYZER v4.0
 SOC-GRADE LOG ANALYSIS, DETECTION & REPORTING ENGINE (PYTHON)
 
