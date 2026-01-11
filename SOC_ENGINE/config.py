@@ -1,0 +1,65 @@
+# =====================================================
+# ELITE SOC ANALYZER v4.0 — CONFIGURATION MODULE
+# AUTHOR: VISHAL - SOC ENGINEERING
+# =====================================================
+
+# ==================== TOOL METADATA ====================
+
+TOOL_NAME = "ELITE SOC ANALYZER"
+TOOL_VERSION = "4.0-ENTERPRISE"
+TOOL_AUTHOR = "VISHAL - SOC ENGINEERING"
+
+# ==================== DETECTION THRESHOLDS ====================
+
+# FAILED AUTHENTICATION DETECTION
+FAILED_LOGIN_THRESHOLD = 5
+FAILED_LOGIN_WINDOW_MINUTES = 5
+
+# GENERIC SUSPICIOUS ACTIVITY
+SUSPICIOUS_ACTIVITY_THRESHOLD = 10
+
+# PORT SCANNING DETECTION
+PORT_SCAN_THRESHOLD = 15
+PORT_SCAN_WINDOW_MINUTES = 10
+
+# ==================== RISK SCORING WEIGHTS ====================
+
+WEIGHT_FAILED_AUTH = 6
+WEIGHT_PORT_SCAN = 4
+WEIGHT_GEO_RISK = 20
+WEIGHT_THREAT_INTEL = 30
+WEIGHT_TOR_EXIT = 25
+
+# ==================== HIGH RISK GEOGRAPHIC REGIONS ====================
+
+GEO_RISK_COUNTRIES = [
+    "RU", "CN", "KP", "IR", "SY",
+    "AF", "IQ", "BY", "VE"
+]
+
+# ==================== FALSE POSITIVE REDUCTION ====================
+
+ENABLE_FP_REDUCTION = True
+FP_SUCCESSFUL_LOGIN_THRESHOLD = 3
+
+# ==================== LIVE THREAT INTELLIGENCE ====================
+
+ENABLE_LIVE_THREAT_INTEL = False
+
+ABUSEIPDB_API_KEY = "YOUR_API_KEY_HERE"
+VIRUSTOTAL_API_KEY = "YOUR_API_KEY_HERE"
+
+# ==================== ALERT MANAGEMENT ====================
+
+ENABLE_ALERT_DEDUPLICATION = True
+ALERT_DEDUP_WINDOW_MINUTES = 60
+
+# ==================== MACHINE LEARNING ====================
+
+ENABLE_ML_ANOMALY_DETECTION = True
+ANOMALY_THRESHOLD = 0.75
+
+# ==================== REPORTING DIRECTORIES ====================
+
+REPORT_DIR = "soc_reports"
+IOC_EXPORT_DIR = "ioc_feeds"
