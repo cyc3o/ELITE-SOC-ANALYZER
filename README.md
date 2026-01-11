@@ -40,32 +40,6 @@ IOC FEED EXPORT (JSON)
 ANALYST-FRIENDLY CLI INTERFACE
 MODULAR, CLEAN PYTHON ARCHITECTURE
 
-PROJECT STRUCTURE 🏦
-
-SOC GRADE ENGINE/
-├── LICENSE
-├── README.md
-├── SOC ENGINE/
-│   ├── main.py
-│   ├── config.py
-│   ├── ui.py
-│   ├── colors.py
-│   ├── file_picker.py
-│   │
-│   ├── parser.py
-│   ├── analysis_engine.py
-│   ├── risk_engine.py
-│   ├── ml_engine.py
-│   │
-│   ├── mitre.py
-│   ├── mitre_matrix.py
-│   │
-│   ├── threat_intel.py
-│   ├── siem_export.py
-│   │
-│   ├── reports.py
-│   └── html_report.py
-
 
 INSTALLATION
 REQUIREMENTS
@@ -73,11 +47,7 @@ PYTHON 3.9 OR HIGHER
 USES LIGHTWEIGHT, COMMONLY USED THIRD-PARTY LIBRARIES
 (NO ENTERPRISE OR CLOUD DEPENDENCIES)
 
-CLONE REPOSITORY
-
-Bash
-git clone https://github.com/cyc3o/ELITE-SOC-ANALYZER.git
-cd elite-soc-analyzer
+CLONE IT SIMPLY 
 
 HOW TO RUN
 
