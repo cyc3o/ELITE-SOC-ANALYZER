@@ -1,0 +1,7 @@
+[
+  {
+    "incident_id": "INC-001",
+    "type": "Brute Force Attack",
+    "status": "Blocked"
+  }
+]
