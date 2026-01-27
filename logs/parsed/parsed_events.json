@@ -1,0 +1,12 @@
+[
+  {
+    "event": "failed_login",
+    "ip": "185.220.101.45",
+    "severity": "high"
+  },
+  {
+    "event": "blocked_firewall",
+    "ip": "185.220.101.45",
+    "severity": "high"
+  }
+]
