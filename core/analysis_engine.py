@@ -1,6 +1,6 @@
 # =====================================================
-# ELITE SOC ANALYZER v7.0 — INDUSTRY CLOSED LOOP ENGINE
-# AUTHOR: VISHAL — SOC ENGINEERING (L5+)
+# ELITE SOC ANALYZER v7.1 — INDUSTRY CLOSED LOOP ENGINE
+# AUTHOR: VISHAL — SOC ENGINEERING
 # =====================================================
 
 import os
@@ -24,8 +24,12 @@ from storage.database import (
     upsert_incident
 )
 
-from ui.ui import display_status, display_warning, display_error, progress_bar
-
+from ui.ui import (
+    display_status,
+    display_warning,
+    display_error,
+    progress_bar
+)
 
 # =====================================================
 # ANALYSIS ENGINE
@@ -33,11 +37,11 @@ from ui.ui import display_status, display_warning, display_error, progress_bar
 
 class AnalysisEngine:
     """
-    SOC v7 Engine
-    - Deterministic detection
+    SOC Analysis Engine
+    - Deterministic + heuristic detection
+    - Threat intel correlation
+    - ML anomaly scoring
     - Incident lifecycle aware
-    - Cognitive feedback compatible
-    - Timeline ready
     """
 
     def __init__(
@@ -47,21 +51,21 @@ class AnalysisEngine:
         time_engine=None,
         mutation_engine=None
     ):
-        # Core systems
+        # Core components
         self.parser = LogParser()
         self.threat_intel = ThreatIntelligence()
         self.ml = MLAnomalyDetector()
 
-        # Cognitive systems (optional)
+        # Optional cognitive systems
         self.memory = experience_memory
         self.defender = defender_brain
         self.time_engine = time_engine
         self.mutation = mutation_engine
 
-        # Init DB once
+        # Init persistence
         init_db()
 
-        # Runtime stats
+        # Runtime statistics
         self.stats = {
             "TOTAL_LINES": 0,
             "PARSED_EVENTS": 0,
@@ -69,6 +73,7 @@ class AnalysisEngine:
             "CRITICAL_THREATS": 0,
             "HIGH_THREATS": 0,
             "MEDIUM_THREATS": 0,
+            "LOW_THREATS": 0,
             "ML_ANOMALIES_DETECTED": 0,
             "FALSE_POSITIVES_SUPPRESSED": 0,
             "ANALYSIS_START": None,
@@ -77,7 +82,7 @@ class AnalysisEngine:
         }
 
     # =====================================================
-    # ENTRY POINT
+    # PUBLIC ENTRY
     # =====================================================
 
     def analyze_file(self, file_path: str):
@@ -123,10 +128,10 @@ class AnalysisEngine:
                     events.append(parsed)
                     self.stats["PARSED_EVENTS"] += 1
 
-                if idx % 250 == 0:
-                    progress_bar(idx, self.stats["TOTAL_LINES"], "PARSING")
+                if idx % 200 == 0:
+                    progress_bar(idx, len(lines), "PARSING")
 
-        progress_bar(self.stats["TOTAL_LINES"], self.stats["TOTAL_LINES"], "PARSING")
+        progress_bar(len(lines), len(lines), "PARSING")
         return events
 
     # =====================================================
@@ -164,13 +169,13 @@ class AnalysisEngine:
         recent = []
         for e in events:
             try:
-                if datetime.fromisoformat(e["INGEST_TIME"]) > now - window:
+                if datetime.fromisoformat(e["timestamp"]) > now - window:
                     recent.append(e)
             except Exception:
                 continue
 
-        failed = sum(1 for e in recent if "FAILED" in e.get("EVENT_TYPE", ""))
-        success = sum(1 for e in events if "ACCEPTED" in e.get("EVENT_TYPE", ""))
+        failed = sum(1 for e in recent if "FAILED" in e.get("event_type", ""))
+        success = sum(1 for e in events if "ACCEPTED" in e.get("event_type", ""))
 
         threats, _ = self.threat_intel.check_ip_reputation(ip)
         geo = self.threat_intel.get_geoip_info(ip)
@@ -198,9 +203,6 @@ class AnalysisEngine:
                 ml_anomaly_score=ml_score
             )
 
-            if self.time_engine and self.time_engine.breach_clock > 0.6:
-                risk = min(risk + 10, cfg.MAX_RISK_SCORE)
-
             confidence = calculate_confidence_level(
                 data_quality=0.9,
                 threat_intel_match=bool(threats),
@@ -222,8 +224,8 @@ class AnalysisEngine:
                 "CONFIDENCE": confidence,
                 "ML_ANOMALY_SCORE": round(ml_score, 2),
                 "GEO_COUNTRY": geo.get("COUNTRY"),
-                "FIRST_SEEN": events[0]["INGEST_TIME"],
-                "LAST_SEEN": events[-1]["INGEST_TIME"],
+                "FIRST_SEEN": events[0]["timestamp"],
+                "LAST_SEEN": events[-1]["timestamp"],
                 "MITRE_ATTACK": mitre,
                 "KILL_CHAIN_PHASE": mitre.get("TACTIC"),
                 "ALERT_SOURCE": cfg.TOOL_NAME,
@@ -243,7 +245,7 @@ class AnalysisEngine:
         alerts = []
         ips = {e.get("ip") for e in events if e.get("ip")}
 
-        if len(ips) >= 4:
+        if len(ips) >= cfg.ACCOUNT_IP_THRESHOLD:
             mitre = MITRE_ATTACK.get("ACCOUNT_COMPROMISE", {})
             alert = {
                 "ALERT_ID": self._alert_id(user),
@@ -267,7 +269,27 @@ class AnalysisEngine:
         return alerts
 
     # =====================================================
-    # TIME & COGNITION
+    # COGNITIVE FEEDBACK
+    # =====================================================
+
+    def _apply_cognitive_feedback(self, alerts):
+        if not self.mutation and not self.memory:
+            return
+
+        for alert in alerts:
+            if alert["THREAT_LEVEL"] == "CRITICAL":
+                if self.mutation:
+                    self.mutation.observe_success()
+
+            elif alert["THREAT_LEVEL"] == "MEDIUM":
+                if self.mutation:
+                    self.mutation.observe_regret({
+                        "alert": alert["THREAT_TYPE"],
+                        "reason": "uncertain_signal"
+                    })
+
+    # =====================================================
+    # DEDUP / TIME
     # =====================================================
 
     def _apply_time_pressure(self, alerts):
@@ -279,22 +301,6 @@ class AnalysisEngine:
                 if a["THREAT_LEVEL"] == "HIGH":
                     a["THREAT_LEVEL"] = "CRITICAL"
         return alerts
-
-    def _apply_cognitive_feedback(self, alerts):
-        if not self.mutation:
-            return
-
-        for a in alerts:
-            if a["THREAT_LEVEL"] == "CRITICAL":
-                self.mutation.observe_success()
-            elif a["THREAT_LEVEL"] == "MEDIUM":
-                self.mutation.observe_regret(
-                    {"alert": a["THREAT_TYPE"], "reason": "uncertain"}
-                )
-
-    # =====================================================
-    # DEDUP
-    # =====================================================
 
     def _deduplicate(self, alerts):
         unique = []
@@ -325,7 +331,9 @@ class AnalysisEngine:
             return "CRITICAL"
         if risk >= 60:
             return "HIGH"
-        return "MEDIUM"
+        if risk >= 40:
+            return "MEDIUM"
+        return "LOW"
 
     def _finalize_stats(self, alerts):
         self.stats["ANALYSIS_END"] = datetime.utcnow()
@@ -337,3 +345,26 @@ class AnalysisEngine:
         self.stats["CRITICAL_THREATS"] = sum(1 for a in alerts if a["THREAT_LEVEL"] == "CRITICAL")
         self.stats["HIGH_THREATS"] = sum(1 for a in alerts if a["THREAT_LEVEL"] == "HIGH")
         self.stats["MEDIUM_THREATS"] = sum(1 for a in alerts if a["THREAT_LEVEL"] == "MEDIUM")
+        self.stats["LOW_THREATS"] = sum(1 for a in alerts if a["THREAT_LEVEL"] == "LOW")
+
+
+# =====================================================
+# LOG DIRECTORY CONNECTOR
+# =====================================================
+
+def analyze_logs_directory(engine, logs_dir=None):
+    logs_dir = logs_dir or cfg.LOGS_PATH
+
+    if not os.path.isdir(logs_dir):
+        display_error(f"LOG DIRECTORY NOT FOUND: {logs_dir}")
+        return []
+
+    all_alerts = []
+    display_status(f"SCANNING LOG DIRECTORY: {logs_dir}")
+
+    for file in os.listdir(logs_dir):
+        path = os.path.join(logs_dir, file)
+        if os.path.isfile(path):
+            all_alerts.extend(engine.analyze_file(path))
+
+    return all_alerts
