@@ -11,7 +11,6 @@ from datetime import datetime
 # =====================================================
 # PATH SAFETY (CRITICAL)
 # =====================================================
-# Ensures root imports (config, core, brains, etc.) work
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
@@ -28,10 +27,10 @@ from ui.ui import (
 )
 
 # =====================================================
-# CORE ENGINE
+# CORE ENGINE (FIXED)
 # =====================================================
 
-from core.analysis_engine import AnalysisEngine, analyze_logs_directory
+from core.analysis_engine import AnalysisEngine   # ← FIX: removed unused import
 
 # =====================================================
 # COGNITIVE SUBSYSTEMS
