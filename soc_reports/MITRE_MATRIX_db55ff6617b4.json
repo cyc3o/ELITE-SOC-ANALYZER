@@ -1,0 +1,514 @@
+{
+  "GENERATED_AT": "2026-01-22T21:10:51.386059",
+  "TACTICS": {
+    "CREDENTIAL ACCESS": [
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      },
+      {
+        "TECHNIQUE": "T1110.001",
+        "NAME": "PASSWORD GUESSING",
+        "THREAT_TYPE": "SSH_BRUTE_FORCE"
+      }
+    ],
+    "LATERAL MOVEMENT": [
+      {
+        "TECHNIQUE": "T1078.003",
+        "NAME": "LOCAL ACCOUNTS",
+        "THREAT_TYPE": "POTENTIAL_ACCOUNT_COMPROMISE"
+      }
+    ]
+  }
+}
