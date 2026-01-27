@@ -21,13 +21,11 @@ ENABLE_FULL_INTELLIGENCE_LOOP = True
 # LOG PATHS (🔥 OLD + NEW BOTH CONNECTED 🔥)
 # =====================================================
 
-# 🔹 OLD NAMES (for old code – DO NOT REMOVE)
 LOGS_PATH = "./logs/raw/"
 PARSED_PATH = "./logs/parsed/"
 CORRELATED_PATH = "./logs/correlated/"
 REPORTS_PATH = "./reports/"
 
-# 🔹 NEW EXPLICIT NAMES (for new SOC pipeline)
 LOGS_RAW_PATH = LOGS_PATH
 LOGS_PARSED_PATH = PARSED_PATH
 LOGS_CORRELATED_PATH = CORRELATED_PATH
@@ -44,6 +42,10 @@ PORT_SCAN_THRESHOLD = 15
 PORT_SCAN_WINDOW_MINUTES = 10
 
 GENERIC_SUSPICIOUS_THRESHOLD = 10
+
+# ✅ FIX: Account sharing / IP hopping detection
+ACCOUNT_IP_THRESHOLD = 3
+ACCOUNT_IP_WINDOW_MINUTES = 15
 
 # =====================================================
 # RISK SCORING
@@ -166,6 +168,4 @@ SYSTEM_PHILOSOPHY = (
 
 # ==================== BACKWARD COMPATIBILITY ====================
 
-REPORT_DIR = REPORTS_PATH          # for reports/reports.py
-IOC_EXPORT_DIR = IOC_EXPORT_DIR    # already exists
-SIEM_EXPORT_DIR = SIEM_EXPORT_DIR  # already exists
+REPORT_DIR = REPORTS_PATH
