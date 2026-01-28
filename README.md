@@ -66,7 +66,7 @@ https://github.com/cyc3o/ELITE-SOC-ANALYZER.git
 
 2 > cd ELITE-SOC-ANALYZER 
 
-3 > python SOC_ENGINE/main.py
+3 > python main.py
 
 
         🧭 FOLLOW THE CLI PROMPTS TO
