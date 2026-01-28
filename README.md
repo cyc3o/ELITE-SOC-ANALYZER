@@ -7,7 +7,7 @@
 SOC-GRADE LOG ANALYSIS, DETECTION & REPORTING ENGINE (PYTHON)
 
 
-                 OVERVIEW
+                  OVERVIEW
 
 ![SOC DASHBOARD](https://github.com/cyc3o/ELITE-SOC-ANALYZER/blob/main/DASHBOARD/SOC_DASHBOARD.png)
 
