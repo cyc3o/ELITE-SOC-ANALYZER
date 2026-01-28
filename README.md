@@ -1,4 +1,3 @@
-
 ![PYTHON](https://img.shields.io/badge/PYTHON-3.9%2B-BLUE)![STATUS](https://img.shields.io/badge/STATUS-ACTIVE-SUCCESS)![LICENSE](https://img.shields.io/badge/LICENSE-MIT-BLUE)
 
 
