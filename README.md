@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/LICENSE-MIT-BLUE" />
 </p>
 
-<h1 align="center"><b>ELITE SOC ANALYZER V6.0</b></h1>
+<h1 align="center"><b>ʟᴏɢ ᴘʀᴏᴄᴇꜱꜱɪɴɢ & ᴛʜʀᴇᴀᴛ ᴄᴏʀʀᴇʟᴀᴛɪᴏɴ ᴘʟᴀᴛꜰᴏʀᴍ
+ V6.0</b></h1>
 
 <p align="center">
   <b>SOC-GRADE LOG ANALYSIS, DETECTION & REPORTING ENGINE (PYTHON)</b>
